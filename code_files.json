@@ -1,0 +1,212 @@
+[
+  {
+    "name": "APT41 .md",
+    "path": "APT41 /APT41 .md",
+    "repository": "ExpOrx/Blog",
+    "url": "https://github.com/ExpOrx/Blog/blob/75121ef9b07989dc6944d7905ab37bfc0090b1bc/APT41%20/APT41%20.md",
+    "repository_url": "https://github.com/ExpOrx/Blog"
+  },
+  {
+    "name": "README.md",
+    "path": "README.md",
+    "repository": "kbandla/APTnotes",
+    "url": "https://github.com/kbandla/APTnotes/blob/586aaa5e3960bb951a83050f898a2117bd46ebcf/README.md",
+    "repository_url": "https://github.com/kbandla/APTnotes"
+  },
+  {
+    "name": "content.txt",
+    "path": "Intel Reports/blog_group-ib_com/colunmtk_apt41/content.txt",
+    "repository": "mthcht/ThreatIntel-Reports",
+    "url": "https://github.com/mthcht/ThreatIntel-Reports/blob/02cd3a86579807f7a489da8df5822a249aed41ea/Intel%20Reports/blog_group-ib_com/colunmtk_apt41/content.txt",
+    "repository_url": "https://github.com/mthcht/ThreatIntel-Reports"
+  },
+  {
+    "name": "report_APT41.pdf.txt",
+    "path": "data/raw/2019/report_APT41.pdf.txt",
+    "repository": "korney3/ARES_RVision_Hack",
+    "url": "https://github.com/korney3/ARES_RVision_Hack/blob/86b53b5e9c5495e988951cc3a11afe61c883d2a6/data/raw/2019/report_APT41.pdf.txt",
+    "repository_url": "https://github.com/korney3/ARES_RVision_Hack"
+  },
+  {
+    "name": "apt41-initiates-global-intrusion-campaign-using-multiple-exploits@html.txt",
+    "path": "Sentences/apt41-initiates-global-intrusion-campaign-using-multiple-exploits@html.txt",
+    "repository": "UMBC-Onramp/CyEnts-Cyber-Blog-Dataset",
+    "url": "https://github.com/UMBC-Onramp/CyEnts-Cyber-Blog-Dataset/blob/d8b7716ce5f02208e93484a41a6d0f0da4a811e0/Sentences/apt41-initiates-global-intrusion-campaign-using-multiple-exploits@html.txt",
+    "repository_url": "https://github.com/UMBC-Onramp/CyEnts-Cyber-Blog-Dataset"
+  },
+  {
+    "name": "Unsorted-rt.md",
+    "path": "Draft/Unsorted-rt.md",
+    "repository": "rmusser01/Infosec_Reference",
+    "url": "https://github.com/rmusser01/Infosec_Reference/blob/4bdf90b0b98b7641140f9bf3950addc42d1861db/Draft/Unsorted-rt.md",
+    "repository_url": "https://github.com/rmusser01/Infosec_Reference"
+  },
+  {
+    "name": "APTnotes.csv",
+    "path": "APTnotes.csv",
+    "repository": "aptnotes/data",
+    "url": "https://github.com/aptnotes/data/blob/8595fbdee6747be9e9f730fd0bacd247157314df/APTnotes.csv",
+    "repository_url": "https://github.com/aptnotes/data"
+  },
+  {
+    "name": "attack_groups.txt",
+    "path": "20220307/attack_groups.txt",
+    "repository": "RealityNet/attack-coverage",
+    "url": "https://github.com/RealityNet/attack-coverage/blob/a933255173c0d512f712e2cb81a2067aa99a75a7/20220307/attack_groups.txt",
+    "repository_url": "https://github.com/RealityNet/attack-coverage"
+  },
+  {
+    "name": "README.md",
+    "path": "README.md",
+    "repository": "CyberMonitor/APT_CyberCriminal_Campagin_Collections",
+    "url": "https://github.com/CyberMonitor/APT_CyberCriminal_Campagin_Collections/blob/cbf136e24f5d2a4d89619580455aae8b9b0aeadb/README.md",
+    "repository_url": "https://github.com/CyberMonitor/APT_CyberCriminal_Campagin_Collections"
+  },
+  {
+    "name": "2015:09:digital-india-facebook.html",
+    "path": "20220620-all-reports/thehackernews_html/2015:09:digital-india-facebook.html",
+    "repository": "security-kg/oscti-data",
+    "url": "https://github.com/security-kg/oscti-data/blob/3aa77c456f56fd187ef9d5ced5a3fa3642f6704d/20220620-all-reports/thehackernews_html/2015:09:digital-india-facebook.html",
+    "repository_url": "https://github.com/security-kg/oscti-data"
+  },
+  {
+    "name": "entry_10d13e78-94af-4fd1-97fb-788c605e673a.text",
+    "path": "data_input/mw_reports/entry_10d13e78-94af-4fd1-97fb-788c605e673a.text",
+    "repository": "binaryninja/Malware-Knowledge-Graph",
+    "url": "https://github.com/binaryninja/Malware-Knowledge-Graph/blob/2faa6058ad9722fc97569a55f7d1b158374ba1d0/data_input/mw_reports/entry_10d13e78-94af-4fd1-97fb-788c605e673a.text",
+    "repository_url": "https://github.com/binaryninja/Malware-Knowledge-Graph"
+  },
+  {
+    "name": "https___blog.polyswarm.io_deadbolt-ransomware.html",
+    "path": "articles/https___blog.polyswarm.io_deadbolt-ransomware.html",
+    "repository": "timb-machine/linux-malware",
+    "url": "https://github.com/timb-machine/linux-malware/blob/b36108445e6e433a1fccde5a18b7a18c712bb8b1/articles/https___blog.polyswarm.io_deadbolt-ransomware.html",
+    "repository_url": "https://github.com/timb-machine/linux-malware"
+  },
+  {
+    "name": "updates-october-2024.md",
+    "path": "modules/resources/static_pages/updates-october-2024.md",
+    "repository": "mitre-attack/attack-website",
+    "url": "https://github.com/mitre-attack/attack-website/blob/a76446b75281bc9801c4b82de4fedb77ea2ccd36/modules/resources/static_pages/updates-october-2024.md",
+    "repository_url": "https://github.com/mitre-attack/attack-website"
+  },
+  {
+    "name": "9c124874-042d-48cd-b72b-ccdc51ecbbd6",
+    "path": "static/graphs/9c124874-042d-48cd-b72b-ccdc51ecbbd6",
+    "repository": "MISP/misp-website",
+    "url": "https://github.com/MISP/misp-website/blob/093c42cc2b4a5532bb1986b2ac579e29f6819e3b/static/graphs/9c124874-042d-48cd-b72b-ccdc51ecbbd6",
+    "repository_url": "https://github.com/MISP/misp-website"
+  },
+  {
+    "name": "bitsadmin.json",
+    "path": "lolbins/stix2/bitsadmin.json",
+    "repository": "CTI-Driven/LOLBins",
+    "url": "https://github.com/CTI-Driven/LOLBins/blob/5e4c3f26db7acce576e29941815e7990552c1ea9/lolbins/stix2/bitsadmin.json",
+    "repository_url": "https://github.com/CTI-Driven/LOLBins"
+  },
+  {
+    "name": "Trelllix-Advanced-Threat-Research-Report-2023.md",
+    "path": "Markdown Conversions/2023/Trelllix-Advanced-Threat-Research-Report-2023.md",
+    "repository": "jacobdjwilson/awesome-annual-security-reports",
+    "url": "https://github.com/jacobdjwilson/awesome-annual-security-reports/blob/0a710c719c545ce33884f32eb646a585b0325e4f/Markdown%20Conversions/2023/Trelllix-Advanced-Threat-Research-Report-2023.md",
+    "repository_url": "https://github.com/jacobdjwilson/awesome-annual-security-reports"
+  },
+  {
+    "name": "2024-08-03.md",
+    "path": "archive/2024/2024-08-03.md",
+    "repository": "ruohong2018/ruohong2018.github.io",
+    "url": "https://github.com/ruohong2018/ruohong2018.github.io/blob/8c2bedea2a40a380ace6b078ba618ebaf46e9800/archive/2024/2024-08-03.md",
+    "repository_url": "https://github.com/ruohong2018/ruohong2018.github.io"
+  },
+  {
+    "name": "char_vocabs.txt",
+    "path": "blog40-CTI-NER/char_vocabs.txt",
+    "repository": "eastmountyxz/AI-for-TensorFlow",
+    "url": "https://github.com/eastmountyxz/AI-for-TensorFlow/blob/a8241bc35711f1c7e3e8908ce8521fcdee42d2d7/blog40-CTI-NER/char_vocabs.txt",
+    "repository_url": "https://github.com/eastmountyxz/AI-for-TensorFlow"
+  },
+  {
+    "name": "netscaler-content.sh",
+    "path": "scanners/netscaler-content.sh",
+    "repository": "citrix/ioc-scanner-CVE-2019-19781",
+    "url": "https://github.com/citrix/ioc-scanner-CVE-2019-19781/blob/df7e51b5a3a47e7637760b54e538a0183650e796/scanners/netscaler-content.sh",
+    "repository_url": "https://github.com/citrix/ioc-scanner-CVE-2019-19781"
+  },
+  {
+    "name": "doc73.md",
+    "path": "docs/doc73.md",
+    "repository": "marcialwushu/restropective-docusaurus",
+    "url": "https://github.com/marcialwushu/restropective-docusaurus/blob/316489bae604b98cbb67e4f4e95779278526e2f5/docs/doc73.md",
+    "repository_url": "https://github.com/marcialwushu/restropective-docusaurus"
+  },
+  {
+    "name": "2024-07-13.json",
+    "path": "archive/tmp/2024-07-13.json",
+    "repository": "chainreactors/picker",
+    "url": "https://github.com/chainreactors/picker/blob/5851a7f6ca6d00a514e2b2b5946525d87969290c/archive/tmp/2024-07-13.json",
+    "repository_url": "https://github.com/chainreactors/picker"
+  },
+  {
+    "name": "data.csv",
+    "path": "data.csv",
+    "repository": "bastosjt/Data-Visulation",
+    "url": "https://github.com/bastosjt/Data-Visulation/blob/f9acc9354d7560de325401a7df40bca60b72720d/data.csv",
+    "repository_url": "https://github.com/bastosjt/Data-Visulation"
+  },
+  {
+    "name": "2021.md",
+    "path": "安全事记/2021.md",
+    "repository": "dr0v/sec-lib",
+    "url": "https://github.com/dr0v/sec-lib/blob/662d476b929ab16f51418251913874fdfa3a5e45/%E5%AE%89%E5%85%A8%E4%BA%8B%E8%AE%B0/2021.md",
+    "repository_url": "https://github.com/dr0v/sec-lib"
+  },
+  {
+    "name": "03-2021.txt",
+    "path": "code/analysis/newspaper/graphs/ner_lists/timesofindia/03-2021.txt",
+    "repository": "k-wal/farmers-movement-archive",
+    "url": "https://github.com/k-wal/farmers-movement-archive/blob/6b10d5cd5a4aef5c6d5d03583fe186ae946c658a/code/analysis/newspaper/graphs/ner_lists/timesofindia/03-2021.txt",
+    "repository_url": "https://github.com/k-wal/farmers-movement-archive"
+  },
+  {
+    "name": "r-91.txt",
+    "path": "TimeML/unseen_reports/r-91.txt",
+    "repository": "rayhanur-rahman/ChronoCTI",
+    "url": "https://github.com/rayhanur-rahman/ChronoCTI/blob/4906a0a5e399b6e2aa10435fd6e3894e041e4549/TimeML/unseen_reports/r-91.txt",
+    "repository_url": "https://github.com/rayhanur-rahman/ChronoCTI"
+  },
+  {
+    "name": "microsoft-threat-actor-naming.md",
+    "path": "unified-secops-platform/microsoft-threat-actor-naming.md",
+    "repository": "MicrosoftDocs/defender-docs",
+    "url": "https://github.com/MicrosoftDocs/defender-docs/blob/6c91f194648a51af034be0e8825fbf8f826cf51c/unified-secops-platform/microsoft-threat-actor-naming.md",
+    "repository_url": "https://github.com/MicrosoftDocs/defender-docs"
+  },
+  {
+    "name": "18522",
+    "path": "dwnews.com/18522",
+    "repository": "txtcn/data",
+    "url": "https://github.com/txtcn/data/blob/01779c64c4bc5e7aac827b0a24de0f37345c5276/dwnews.com/18522",
+    "repository_url": "https://github.com/txtcn/data"
+  },
+  {
+    "name": "cti-taa.txt",
+    "path": "logs/gpt4/cti-taa.txt",
+    "repository": "xashru/cti-bench",
+    "url": "https://github.com/xashru/cti-bench/blob/57ce8c246e5fc66a16c6cef743f3a983831b90f0/logs/gpt4/cti-taa.txt",
+    "repository_url": "https://github.com/xashru/cti-bench"
+  },
+  {
+    "name": "r-1239.txt",
+    "path": "TimeML/unseen_reports/r-1239.txt",
+    "repository": "rayhanur-rahman/ChronoCTI",
+    "url": "https://github.com/rayhanur-rahman/ChronoCTI/blob/4906a0a5e399b6e2aa10435fd6e3894e041e4549/TimeML/unseen_reports/r-1239.txt",
+    "repository_url": "https://github.com/rayhanur-rahman/ChronoCTI"
+  },
+  {
+    "name": "txt.txt",
+    "path": "dataset/English-spider/18/txt.txt",
+    "repository": "stwater20/11301-NSPT-Team11",
+    "url": "https://github.com/stwater20/11301-NSPT-Team11/blob/cee8ce141ffa3f49265faf78d18452b7a1cb372f/dataset/English-spider/18/txt.txt",
+    "repository_url": "https://github.com/stwater20/11301-NSPT-Team11"
+  }
+]
