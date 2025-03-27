@@ -108,23 +108,38 @@ function extractCodeData(item) {
 }
 
 function saveIOCsToFile(filename, data) {
-    let allIOCs = [];
+    let categorizedIOCs = {
+        ipv4: new Set(),
+        md5: new Set(),
+        sha1: new Set(),
+        sha256: new Set(),
+        domain: new Set(),
+        url: new Set()
+    };
+
     data.forEach(item => {
-        Object.values(item.iocs).forEach(iocList => {
-            allIOCs.push(...iocList);
+        Object.entries(item.iocs).forEach(([type, iocList]) => {
+            if (categorizedIOCs[type]) {
+                iocList.forEach(ioc => categorizedIOCs[type].add(ioc));
+            }
         });
     });
 
-    allIOCs = [...new Set(allIOCs)]; // Remove duplicates
+    // Convert Sets to Arrays for JSON storage
+    const finalIOCs = {};
+    Object.entries(categorizedIOCs).forEach(([type, iocSet]) => {
+        finalIOCs[type] = [...iocSet];
+    });
 
-    if (allIOCs.length === 0) {
+    if (Object.values(finalIOCs).every(arr => arr.length === 0)) {
         console.log(`No IOCs found for ${filename}`);
         fs.writeFileSync(filename, JSON.stringify({ message: "No IOCs found" }, null, 2));
     } else {
-        fs.writeFileSync(filename, JSON.stringify(allIOCs, null, 2));
+        fs.writeFileSync(filename, JSON.stringify(finalIOCs, null, 2));
         console.log(`Extracted IOCs saved to ${filename}`);
     }
 }
+
 
 
 // Extract relevant data from issues
