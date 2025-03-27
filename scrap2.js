@@ -212,14 +212,19 @@ function extractIOCs(text) {
 
 async function runScraper() {
     const issueData = await fetchAllGitHubData(issueSearchURL, "issues_filtered.json", extractIssueData);
+    const codeData = await fetchAllGitHubData(codeSearchURL, "code_files_filtered.json", extractCodeData);
 
-    if (!issueData || issueData.length === 0) {
-        console.log("No issue data retrieved.");
+    if ((!issueData || issueData.length === 0) && (!codeData || codeData.length === 0)) {
+        console.log("No issue or code data retrieved.");
         return;
     }
 
-    saveIOCsToFile("iocs_extracted.json", issueData);
+    // Combine IOCs from issues and code files
+    const combinedData = [...(issueData || []), ...(codeData || [])];
+
+    saveIOCsToFile("iocs_extracted.json", combinedData);
 }
+
 
 
 runScraper();
