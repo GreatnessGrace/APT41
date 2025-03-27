@@ -69,10 +69,13 @@ async function fetchAllGitHubData(url, filename, extractFunction) {
         }
 
         saveToFile(filename, allItems.slice(0, MAX_RESULTS));
+        return allItems.slice(0, MAX_RESULTS);
     } catch (error) {
         console.error(`Error fetching data for ${filename}:`, error.response ? error.response.data : error.message);
+        return [];
     }
 }
+
 
 // Extract relevant data from repositories
 function extractRepoData(repo) {
@@ -91,17 +94,44 @@ function extractRepoData(repo) {
 
 // Extract relevant data from code files
 function extractCodeData(item) {
+    const text = item.name + " " + item.path;
+    const iocs = extractIOCs(text);
+
     return {
         name: item.name,
         path: item.path,
         repository: item.repository.full_name,
         url: item.html_url,
-        repository_url: item.repository.html_url
+        repository_url: item.repository.html_url,
+        iocs: iocs
     };
 }
 
+function saveIOCsToFile(filename, data) {
+    let allIOCs = [];
+    data.forEach(item => {
+        Object.values(item.iocs).forEach(iocList => {
+            allIOCs.push(...iocList);
+        });
+    });
+
+    allIOCs = [...new Set(allIOCs)]; // Remove duplicates
+
+    if (allIOCs.length === 0) {
+        console.log(`No IOCs found for ${filename}`);
+        fs.writeFileSync(filename, JSON.stringify({ message: "No IOCs found" }, null, 2));
+    } else {
+        fs.writeFileSync(filename, JSON.stringify(allIOCs, null, 2));
+        console.log(`Extracted IOCs saved to ${filename}`);
+    }
+}
+
+
 // Extract relevant data from issues
 function extractIssueData(item) {
+    const text = `${item.title}\n${item.body || ""}`;
+    const iocs = extractIOCs(text);
+
     return {
         title: item.title,
         url: item.html_url,
@@ -112,9 +142,11 @@ function extractIssueData(item) {
         user: {
             username: item.user.login,
             profile_url: item.user.html_url
-        }
+        },
+        iocs: iocs 
     };
 }
+
 
 // Extract relevant data from issues
 // function extractIssueData(item) {
@@ -140,5 +172,39 @@ async function runScraper() {
     await fetchAllGitHubData(codeSearchURL, "code_files_filtered.json", extractCodeData);
     await fetchAllGitHubData(issueSearchURL, "issues_filtered.json", extractIssueData);
 }
+
+const IOC_PATTERNS = {
+    ipv4: /\b(?:\d{1,3}\.){3}\d{1,3}\b/g,
+    md5: /\b[a-fA-F0-9]{32}\b/g,
+    sha1: /\b[a-fA-F0-9]{40}\b/g,
+    sha256: /\b[a-fA-F0-9]{64}\b/g,
+    domain: /\b(?:[a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}\b/g,
+    url: /\bhttps?:\/\/[^\s]+/g
+};
+
+// Function to extract IOCs from a text
+function extractIOCs(text) {
+    const iocs = {};
+    for (const [type, pattern] of Object.entries(IOC_PATTERNS)) {
+        const matches = text.match(pattern);
+        if (matches) {
+            iocs[type] = [...new Set(matches)]; // Remove duplicates
+        }
+    }
+    return iocs;
+}
+
+
+async function runScraper() {
+    const issueData = await fetchAllGitHubData(issueSearchURL, "issues_filtered.json", extractIssueData);
+
+    if (!issueData || issueData.length === 0) {
+        console.log("No issue data retrieved.");
+        return;
+    }
+
+    saveIOCsToFile("iocs_extracted.json", issueData);
+}
+
 
 runScraper();
